@@ -21,6 +21,6 @@ CREATE TABLE tasks (
      task_name VARCHAR(255) NOT NULL,
      is_completed BOOLEAN DEFAULT 0,
      deadline DATETIME NOT NULL,
-     descrition TEXT,
+     description TEXT,
      FOREIGN KEY (todo_id) REFERENCES todos(id)
  );
