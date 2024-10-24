@@ -1,0 +1,27 @@
+.running-text {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    white-space: nowrap;
+    height: 50px;
+  }
+  
+  .text {
+    position: absolute;
+    white-space: nowrap;
+    animation: move-text 5s linear infinite;
+    font-size: 24px;
+    color: #007bff;
+    left: 100%;
+  }
+  
+  @keyframes move-text {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-350%);
+    }
+  }
