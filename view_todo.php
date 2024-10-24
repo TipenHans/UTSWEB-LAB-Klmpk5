@@ -169,7 +169,7 @@ if (isset($_GET['todo_id'])) {
                     <option value="1" <?php echo $task['is_completed'] ? 'selected' : ''; ?>>Completed</option>
                     <option value="0" <?php echo !$task['is_completed'] ? 'selected' : ''; ?>>Incomplete</option>
                 </select>
-                <a href="add_task_description.php?task_id=<?php echo $task['id']; ?>" class="btn btn-sm btn-info">Add Description</a>
+                <a href="view_task_description.php?task_id=<?php echo $task['id']; ?>" class="btn btn-sm btn-info">View Description</a>
                 <button type="submit" class="btn btn-sm btn-outline-secondary">Update</button>
             </form>
             <form method="post" action="delete_task.php" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this task?');">
