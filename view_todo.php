@@ -10,7 +10,6 @@ if (!isset($_SESSION['user_id'])) {
 if (isset($_GET['todo_id'])) {
     $todo_id = (int)$_GET['todo_id'];
 
-    // Handle filtering status
     $filter = isset($_GET['filter_status']) ? $_GET['filter_status'] : 'all';
 
     if ($filter == 'completed') {
