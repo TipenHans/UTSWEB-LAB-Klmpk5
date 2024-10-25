@@ -44,8 +44,10 @@ $todos = $stmt->fetchAll();
             <div class="col-12">
                 <input type="text" name="title" class="form-control" placeholder="List Title" required>
             </div>
+
             <div class="col-12 d-flex justify-content-between">
                 <button type="submit" class="btn btn-success">Create New To-Do List</button>
+                <a href="profile.php" class="btn btn-primary">Profile</a>
                 <a href="logout.php" class="btn btn-danger">Logout</a>
             </div>
         </form>
